@@ -8,6 +8,7 @@ on:
 
 env:
   PYTHONPATH: src
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build_and_process:
@@ -44,16 +45,12 @@ jobs:
           name: processed-logs
           path: log_data/
 
-      - name: Set up Python virtual environment
+      - name: Set up venv and run tests
+        shell: bash
         run: |
           python -m venv venv
           source venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Run tests
-        shell: bash
-        run: |
-          source venv/bin/activate
           export PYTHONPATH=$GITHUB_WORKSPACE
           pytest -v --maxfail=1 --disable-warnings
