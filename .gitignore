@@ -1,0 +1,54 @@
+# -----------------------
+# Python bytecode / caches
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------
+# Virtual environments
+# -----------------------
+venv/
+env/
+.venv/
+
+# -----------------------
+# Logs
+# -----------------------
+*.log                 # ignore all logs by default
+!log_data/messy_logs.log  # except this one which is part of repo
+
+# -----------------------
+# JSON files
+# -----------------------
+*.json                # ignore all JSON by default
+!log_data/events_av.json
+!log_data/events_splunk.json
+normalized_events.json  # generated output to ignore
+
+# -----------------------
+# IDE / editor files
+# -----------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------
+# Pytest / coverage
+# -----------------------
+.coverage
+htmlcov/
+.pytest_cache/
+
+# -----------------------
+# OS files
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Optional: build artifacts
+# -----------------------
+build/
+dist/

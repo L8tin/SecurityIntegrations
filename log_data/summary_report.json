@@ -1,0 +1,30 @@
+{
+  "total_events": 23,
+  "by_severity": {
+    "High": 14,
+    "Critical": 1,
+    "Medium": 5,
+    "Low": 3
+  },
+  "top_event_types": {
+    "Trojan.XYZ": 1,
+    "Ransomware.ABC": 1,
+    "BruteForce": 1,
+    "PhishingAttempt": 1,
+    "Spyware.DEF": 1,
+    "FailedLogin": 1,
+    "Adware.XYZ": 1,
+    "User login failed": 1,
+    "User login succeeded": 1,
+    "incorrect password": 2,
+    "400": 3,
+    "AuthenticationFailed": 5,
+    "BadAPIToken": 2,
+    "SuspiciousLogin": 2
+  },
+  "alerts_triggered": [
+    "[SDM Ticket] Aggregated 5 events of type 'AuthenticationFailed'",
+    "[SDM Ticket] Alert triggered for 'BadAPIToken' on host host07",
+    "[SDM Ticket] Alert triggered for 'BadAPIToken' on host host08"
+  ]
+}

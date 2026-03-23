@@ -1,0 +1,72 @@
+[
+  {
+    "time": "2026-03-22T10:00:00-05:00",
+    "host": "dataserver01.example.com",
+    "source": "security_app",
+    "event": {
+      "message": "User login failed",
+      "user": "jdoe",
+      "severity": "WARN"
+    }
+  },
+  {
+    "time": 1679464860,
+    "host": "dataserver02.example.com",
+    "source": "security_app",
+    "event": {
+      "message": "User login succeeded",
+      "user": "asmith",
+      "severity": "INFO"
+    }
+  },
+  {
+    "time": 1679469560,
+    "host": "dataserver03.example.com",
+    "source": "token_generator",
+    "event": {
+      "message": "incorrect password",
+      "user": "ahacker",
+      "severity": "ERROR"
+    }
+  },
+  {
+    "time": 1679469660,
+    "host": "dataserver09.example.com",
+    "source": "token_generator",
+    "event": {
+      "message": "incorrect password",
+      "user": "ahacker",
+      "severity": "ERROR"
+    }
+  },
+  {
+    "time": 1679469560,
+    "host": "dataserver09.example.com",
+    "source": "mulesoft_api_logs",
+    "event": {
+      "message": "400",
+      "user": "z_serviceaccount1",
+      "severity": "ERROR"
+    }
+  },
+  {
+    "time": 1680579660,
+    "host": "dataserver07.example.com",
+    "source": "mulesoft_api_logs",
+    "event": {
+      "message": "400",
+      "user": "z_serviceaccount1",
+      "severity": "ERROR"
+    }
+  },
+  {
+    "time": 1680579660,
+    "host": "dataserver06.example.com",
+    "source": "mulesoft_api_logs",
+    "event": {
+      "message": "400",
+      "user": "z_serviceaccount1",
+      "severity": "ERROR"
+    }
+  }
+]

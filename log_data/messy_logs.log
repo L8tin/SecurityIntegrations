@@ -1,0 +1,15 @@
+2026-03-22 15:01:00 host03 ERROR AuthenticationFailed user=jdoe token=abc123
+2026-03-22 15:10:00 host03 ERROR AuthenticationFailed user=jdoe token=abc123
+2026-03-22 15:11:00 host03 ERROR AuthenticationFailed user=jdoe token=abc123
+2026-03-22 15:12:00 host03 ERROR AuthenticationFailed user=jdoe token=abc123
+2026-03-22 15:13:00 host03 ERROR AuthenticationFailed user=asmith token=def456
+2026-03-22 15:15:00 host04 WARN MalwareDetected Trojan.DEF
+2026-03-22 15:16:00 host05 INFO PatchApplied KB5001234
+2026-03-22 15:16:00 host06 INFO PatchApplied KB5001234
+2026-03-22 15:16:00 host03 INFO PatchApplied KB5001234
+2026-03-22 15:16:00 host02 INFO PatchApplied KB5001234
+2026-03-22 15:16:00 host01 INFO PatchApplied KB5001234
+2026-03-22 15:18:00 host07 ERROR BadAPIToken user=z_serviceaccount1 token=xyz789
+2026-03-22 15:19:00 host08 ERROR BadAPIToken user=z_serviceaccount2 token=xyz890
+2026-03-22 15:20:00 host09 WARN SuspiciousLogin user=guest token=none
+2026-03-22 15:20:30 host09 WARN SuspiciousLogin user=guest token=none

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "AV123",
+        "timestamp": "2026-03-22T15:00:00Z",
+        "host_or_source": "host01",
+        "event_type": "Trojan.XYZ",
+        "severity": "High",
+        "raw_source": "Antivirus"
+    },
+    {
+        "id": "AV124",
+        "timestamp": "2026-03-22T15:02:00Z",
+        "host_or_source": "host02",
+        "event_type": "Ransomware.ABC",
+        "severity": "Critical",
+        "raw_source": "Antivirus"
+    },
+    {
+        "id": "AL456",
+        "timestamp": "2026-03-22T15:05:00Z",
+        "host_or_source": "192.168.1.10",
+        "event_type": "BruteForce",
+        "severity": "High",
+        "raw_source": "SecurityAlert"
+    },
+    {
+        "id": "AL457",
+        "timestamp": "2026-03-22T15:10:00Z",
+        "host_or_source": "192.168.1.11",
+        "event_type": "PhishingAttempt",
+        "severity": "Medium",
+        "raw_source": "SecurityAlert"
+    },
+    {
+        "id": "AV125",
+        "timestamp": "2026-03-22T15:12:00Z",
+        "host_or_source": "host03",
+        "event_type": "Spyware.DEF",
+        "severity": "Low",
+        "raw_source": "Antivirus"
+    },
+    {
+        "id": "AL458",
+        "timestamp": "2026-03-22T15:20:00Z",
+        "host_or_source": "192.168.1.12",
+        "event_type": "FailedLogin",
+        "severity": "Medium",
+        "raw_source": "SecurityAlert"
+    },
+    {
+        "id": "AV126",
+        "timestamp": "2026-03-22T15:25:00Z",
+        "host_or_source": "host04",
+        "event_type": "Adware.XYZ",
+        "severity": "Low",
+        "raw_source": "Antivirus"
+    }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "AV123",
+    "timestamp": "2026-03-22T15:00:00+00:00",
+    "host_or_source": "host01",
+    "event_type": "Trojan.XYZ",
+    "severity": "High",
+    "user": null,
+    "raw_source": "Antivirus"
+  },
+  {
+    "id": "AV124",
+    "timestamp": "2026-03-22T15:02:00+00:00",
+    "host_or_source": "host02",
+    "event_type": "Ransomware.ABC",
+    "severity": "Critical",
+    "user": null,
+    "raw_source": "Antivirus"
+  },
+  {
+    "id": "AL456",
+    "timestamp": "2026-03-22T15:05:00+00:00",
+    "host_or_source": "192.168.1.10",
+    "event_type": "BruteForce",
+    "severity": "High",
+    "user": null,
+    "raw_source": "SecurityAlert"
+  },
+  {
+    "id": "AL457",
+    "timestamp": "2026-03-22T15:10:00+00:00",
+    "host_or_source": "192.168.1.11",
+    "event_type": "PhishingAttempt",
+    "severity": "Medium",
+    "user": null,
+    "raw_source": "SecurityAlert"
+  },
+  {
+    "id": "AV125",
+    "timestamp": "2026-03-22T15:12:00+00:00",
+    "host_or_source": "host03",
+    "event_type": "Spyware.DEF",
+    "severity": "Low",
+    "user": null,
+    "raw_source": "Antivirus"
+  },
+  {
+    "id": "AL458",
+    "timestamp": "2026-03-22T15:20:00+00:00",
+    "host_or_source": "192.168.1.12",
+    "event_type": "FailedLogin",
+    "severity": "Medium",
+    "user": null,
+    "raw_source": "SecurityAlert"
+  },
+  {
+    "id": "AV126",
+    "timestamp": "2026-03-22T15:25:00+00:00",
+    "host_or_source": "host04",
+    "event_type": "Adware.XYZ",
+    "severity": "Low",
+    "user": null,
+    "raw_source": "Antivirus"
+  },
+  {
+    "id": "dataserver01.example.com_2026-03-22T10:00:00-05:00",
+    "timestamp": "2026-03-22T15:00:00+00:00",
+    "host_or_source": "dataserver01.example.com",
+    "event_type": "User login failed",
+    "severity": "Medium",
+    "user": "jdoe",
+    "raw_source": "security_app"
+  },
+  {
+    "id": "dataserver02.example.com_1679464860",
+    "timestamp": "2023-03-22T06:01:00+00:00",
+    "host_or_source": "dataserver02.example.com",
+    "event_type": "User login succeeded",
+    "severity": "Low",
+    "user": "asmith",
+    "raw_source": "security_app"
+  },
+  {
+    "id": "dataserver03.example.com_1679469560",
+    "timestamp": "2023-03-22T07:19:20+00:00",
+    "host_or_source": "dataserver03.example.com",
+    "event_type": "incorrect password",
+    "severity": "High",
+    "user": "ahacker",
+    "raw_source": "token_generator"
+  },
+  {
+    "id": "dataserver09.example.com_1679469660",
+    "timestamp": "2023-03-22T07:21:00+00:00",
+    "host_or_source": "dataserver09.example.com",
+    "event_type": "incorrect password",
+    "severity": "High",
+    "user": "ahacker",
+    "raw_source": "token_generator"
+  },
+  {
+    "id": "dataserver09.example.com_1679469560",
+    "timestamp": "2023-03-22T07:19:20+00:00",
+    "host_or_source": "dataserver09.example.com",
+    "event_type": "400",
+    "severity": "High",
+    "user": "z_serviceaccount1",
+    "raw_source": "mulesoft_api_logs"
+  },
+  {
+    "id": "dataserver07.example.com_1680579660",
+    "timestamp": "2023-04-04T03:41:00+00:00",
+    "host_or_source": "dataserver07.example.com",
+    "event_type": "400",
+    "severity": "High",
+    "user": "z_serviceaccount1",
+    "raw_source": "mulesoft_api_logs"
+  },
+  {
+    "id": "dataserver06.example.com_1680579660",
+    "timestamp": "2023-04-04T03:41:00+00:00",
+    "host_or_source": "dataserver06.example.com",
+    "event_type": "400",
+    "severity": "High",
+    "user": "z_serviceaccount1",
+    "raw_source": "mulesoft_api_logs"
+  },
+  {
+    "id": "host03_2026-03-22 15:01:00",
+    "timestamp": "2026-03-22T20:01:00+00:00",
+    "host_or_source": "host03",
+    "event_type": "AuthenticationFailed",
+    "severity": "High",
+    "user": "jdoe",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host03_2026-03-22 15:10:00",
+    "timestamp": "2026-03-22T20:10:00+00:00",
+    "host_or_source": "host03",
+    "event_type": "AuthenticationFailed",
+    "severity": "High",
+    "user": "jdoe",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host03_2026-03-22 15:11:00",
+    "timestamp": "2026-03-22T20:11:00+00:00",
+    "host_or_source": "host03",
+    "event_type": "AuthenticationFailed",
+    "severity": "High",
+    "user": "jdoe",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host03_2026-03-22 15:12:00",
+    "timestamp": "2026-03-22T20:12:00+00:00",
+    "host_or_source": "host03",
+    "event_type": "AuthenticationFailed",
+    "severity": "High",
+    "user": "jdoe",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host03_2026-03-22 15:13:00",
+    "timestamp": "2026-03-22T20:13:00+00:00",
+    "host_or_source": "host03",
+    "event_type": "AuthenticationFailed",
+    "severity": "High",
+    "user": "asmith",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host07_2026-03-22 15:18:00",
+    "timestamp": "2026-03-22T20:18:00+00:00",
+    "host_or_source": "host07",
+    "event_type": "BadAPIToken",
+    "severity": "High",
+    "user": "z_serviceaccount1",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host08_2026-03-22 15:19:00",
+    "timestamp": "2026-03-22T20:19:00+00:00",
+    "host_or_source": "host08",
+    "event_type": "BadAPIToken",
+    "severity": "High",
+    "user": "z_serviceaccount2",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host09_2026-03-22 15:20:00",
+    "timestamp": "2026-03-22T20:20:00+00:00",
+    "host_or_source": "host09",
+    "event_type": "SuspiciousLogin",
+    "severity": "Medium",
+    "user": "guest",
+    "raw_source": "LogFile"
+  },
+  {
+    "id": "host09_2026-03-22 15:20:30",
+    "timestamp": "2026-03-22T20:20:30+00:00",
+    "host_or_source": "host09",
+    "event_type": "SuspiciousLogin",
+    "severity": "Medium",
+    "user": "guest",
+    "raw_source": "LogFile"
+  }
+]

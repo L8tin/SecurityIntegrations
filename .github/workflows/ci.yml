@@ -1,0 +1,59 @@
+name: Security Integrations CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  PYTHONPATH: src
+
+jobs:
+  build_and_process:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.12
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run processor script
+        run: bash pipeline_scripts/run.sh
+
+      - name: Upload generated logs
+        uses: actions/upload-artifact@v3
+        with:
+          name: processed-logs
+          path: |
+            log_data/normalized_events.json
+            log_data/summary_report.json
+
+  run_tests:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.12
+    needs: build_and_process
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download logs from previous job
+        uses: actions/download-artifact@v3
+        with:
+          name: processed-logs
+          path: log_data/
+
+      - name: Set up Python virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        shell: bash
+        run: |
+          source venv/bin/activate
+          export PYTHONPATH=$GITHUB_WORKSPACE
+          pytest -v --maxfail=1 --disable-warnings
