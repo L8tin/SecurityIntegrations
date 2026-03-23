@@ -16,13 +16,13 @@ jobs:
       image: python:3.12
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Run processor script
         run: bash pipeline_scripts/run.sh
 
       - name: Upload generated logs
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: processed-logs
           path: |
@@ -36,10 +36,10 @@ jobs:
     needs: build_and_process
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Download logs from previous job
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: processed-logs
           path: log_data/
